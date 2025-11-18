@@ -1,0 +1,21 @@
+# --- Core RAG stack ---
+llama-index
+sentence-transformers
+qdrant-client
+gqlalchemy
+spacy
+rank_bm25
+torch
+faiss-cpu
+
+# --- Utilities & data handling ---
+pandas
+pdfplumber
+
+# --- Interface / Visualization ---
+streamlit
+
+# --- Notebook + Development Environment ---
+ipykernel
+jupyter
+python-dotenv

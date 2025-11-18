@@ -1,0 +1,36 @@
+version: "3.8"
+
+services:
+  memgraph:
+    image: memgraph/memgraph-platform
+    container_name: memgraph
+    ports:
+      - "7687:7687"
+      - "3000:3000"
+    restart: unless-stopped
+
+  qdrant:
+    image: qdrant/qdrant
+    container_name: qdrant
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    restart: unless-stopped
+    volumes:
+      - qdrant_storage:/qdrant/storage
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    restart: unless-stopped
+    ports:
+      - "11434:11434" # Expose the Ollama API
+    volumes:
+      - ollama_data:/root/.ollama # Persist downloaded models
+    environment:
+      - OLLAMA_ORIGINS=*
+      - OLLAMA_DEBUG=0
+
+volumes:
+  qdrant_storage:
+  ollama_data:

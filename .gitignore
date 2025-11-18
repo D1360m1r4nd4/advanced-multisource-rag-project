@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite
+*.log
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Cache
+.cache/
+
+# Data files (optional)
+data/
+raw_data/
+embeddings/
+models/
+checkpoints/
+
+# Streamlit cache
+.streamlit/
+
+# dotenv
+.env
+.env.*
