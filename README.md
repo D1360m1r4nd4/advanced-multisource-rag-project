@@ -54,6 +54,7 @@ flowchart TD
 
     F[LLM Answer Generator<br/>OpenAI / Local LLM]
 
+
 🔧 Tech Stack
 Component	Technology
 Embeddings	BAAI/bge-m3
