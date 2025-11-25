@@ -2,12 +2,6 @@
 ### Enterprise-Grade Retrieval-Augmented Generation Pipeline  
 #### Using BGE-M3 · Qdrant · Memgraph · Ollama
 
-<div align="center">
-  <h1><strong>Advanced Multi-Source RAG System</strong></h1>
-  <h3>Enterprise-Grade Retrieval-Augmented Generation Pipeline</h3>
-  <p><em>Using BGE-M3 Embeddings · Qdrant · Memgraph · Ollama</em></p>
-</div>
-
 ---
 
 ## 1. Overview
