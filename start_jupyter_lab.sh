@@ -16,33 +16,33 @@ PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 VENV_PATH="${PROJECT_DIR}/.venv"
 
 echo "================================================"
-echo "🚀 Advanced Multisource RAG — JupyterLab Launcher"
+echo "Advanced Multisource RAG — JupyterLab Launcher"
 echo "================================================"
 echo ""
 
 # Activate venv
-echo "📦 Activating virtual environment..."
+echo "Activating virtual environment..."
 source "${VENV_PATH}/bin/activate"
 
 # Kill any existing kernel processes
-echo "🔪 Cleaning up any existing kernel processes..."
+echo "Cleaning up any existing kernel processes..."
 pkill -f "ipykernel_launcher" || true
 sleep 1
 
 # Verify kill was successful
 REMAINING=$(pgrep -f "ipykernel_launcher" || echo "0")
 if [ "$REMAINING" -eq 0 ] 2>/dev/null || [ -z "$REMAINING" ]; then
-    echo "   ✅ All old kernels terminated"
+    echo "   All old kernels terminated"
 else
-    echo "   ⚠️  Some processes still running, continuing anyway..."
+    echo "   Some processes still running, continuing anyway..."
 fi
 
 echo ""
-echo "🧪 Starting JupyterLab..."
-echo "   📍 URL: http://localhost:8888"
-echo "   📁 Root: ${PROJECT_DIR}"
+echo "Starting JupyterLab..."
+echo "   URL: http://localhost:8888"
+echo "   Root: ${PROJECT_DIR}"
 echo ""
-echo "💡 Tips:"
+echo "Tips:"
 echo "   • All open notebooks share ONE kernel"
 echo "   • No per-notebook spawning"
 echo "   • Switch notebooks freely without hanging"

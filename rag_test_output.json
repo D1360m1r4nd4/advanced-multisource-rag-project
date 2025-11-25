@@ -1,0 +1,30 @@
+{
+    "llm_answer": "The context does not mention anything about a \"RAG system\" or data sources being used to build it. The provided text appears to be related to the 6 G vision and its architectural pillars, but there is no mention of a RAG system or any data sources associated with it.\n\nHowever, if we look at the last part of the context where it mentions \"REFERENCES\", it lists some papers that were possibly used as references for building the knowledge base. But again, this is not directly related to the question asked.\n\nTherefore, I would say: \n\n\"The context does not contain this information.\"",
+    "citations": [
+        {
+            "source": "./data/test.pdf",
+            "chunk_preview": ". In addition, the vision of 6 G is to also create more humanfriendly, sustainable, and efficient communities. This requ...",
+            "rerank_score": 3.6905620098114014
+        },
+        {
+            "source": "./data/test.pdf",
+            "chunk_preview": ". The 6 G vision is to create a seamless reality where the physical and digital worlds, so far separated, are converged....",
+            "rerank_score": 2.929455280303955
+        },
+        {
+            "source": "./data/test.pdf",
+            "chunk_preview": ". To this end, the connected sustainable world empowered by 6 G will require 3 1) resource efficient ICT, through energy...",
+            "rerank_score": 1.8076837062835693
+        },
+        {
+            "source": "./data/test.pdf",
+            "chunk_preview": ". II and overviewing the use cases (UC) that are expected to drive a digital and societal revolution in Sec. III. This i...",
+            "rerank_score": 0.11828365176916122
+        },
+        {
+            "source": "./data/test.pdf",
+            "chunk_preview": ". This article presented a novel perspective on the 6 G vision and the evolution of mobile networks towards this vision....",
+            "rerank_score": -0.4255110025405884
+        }
+    ]
+}
